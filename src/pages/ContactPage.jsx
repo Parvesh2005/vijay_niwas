@@ -26,7 +26,7 @@ const itemVariants = {
 };
 
 const ContactPage = () => {
-  // Primary contact methods for the featured cards
+  // CHANGED: Replaced 'Reception Hours' with 'WhatsApp'
   const primaryContacts = [
     {
       icon: <Mail className="w-10 h-10 mb-4 text-primary" />,
@@ -41,14 +41,10 @@ const ContactPage = () => {
       href: 'tel:+919416201637',
     },
     {
-      icon: <Clock className="w-10 h-10 mb-4 text-primary" />,
-      title: 'Reception Hours',
-      content: (
-        <span>
-          Mon - Fri: 9 AM - 6 PM<br />
-          Sat - Sun: 10 AM - 4 PM
-        </span>
-      ),
+      icon: <MessageSquare className="w-10 h-10 mb-4 text-primary" />,
+      title: 'WhatsApp',
+      content: 'Click to Message Us',
+      href: 'https://wa.me/919416201637',
     },
   ];
 
@@ -76,35 +72,44 @@ const ContactPage = () => {
       >
         {primaryContacts.map((method) => (
           <motion.div key={method.title} variants={itemVariants} whileHover={{ scale: 1.05, y: -5 }}>
-            <Card className="h-full text-center flex flex-col items-center justify-center p-6 transition-shadow hover-shadow-lg">
+            <Card className="h-full text-center flex flex-col items-center justify-center p-6 transition-shadow hover:shadow-lg">
               <CardHeader className="items-center">
                 {method.icon}
                 <CardTitle>{method.title}</CardTitle>
               </CardHeader>
               <CardDescription className="text-base">
-                {method.href ? (
-                  <a href={method.href} className="hover:underline">
-                    {method.content}
-                  </a>
-                ) : (
-                  method.content
-                )}
+                <a href={method.href} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  {method.content}
+                </a>
               </CardDescription>
             </Card>
           </motion.div>
         ))}
       </motion.div>
+
+      {/* === ADDED RECEPTION HOURS TEXT BELOW CARDS === */}
+      <motion.div
+        className="text-center flex items-center justify-center"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+      >
+        <Clock className="w-5 h-5 mr-3 text-primary" />
+        <p className="text-foreground/80">
+          <span className="font-semibold">Reception Hours:</span> Mon - Fri: 9 AM - 6 PM  |  Sat - Sun: 10 AM - 4 PM
+        </p>
+      </motion.div>
       
-      {/* === MAP SECTION MOVED HERE === */}
+      {/* Map Section */}
       <motion.div
         className="space-y-4"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.6 }} // Adjusted delay
+        transition={{ duration: 0.5, delay: 0.8 }}
       >
         <div className="aspect-video w-full overflow-hidden rounded-lg border shadow-sm">
           <iframe
-            src={`https://maps.google.com/maps?width=600&height=400&hl=en&q=puda%20city%2C%20sector%20119%2C%20mohali&t=&z=14&ie=UTF8&iwloc=B&output=embed`}
+            src="https://maps.google.com/maps?width=600&height=400&hl=en&q=puda%20city%2C%20sector%20119%2C%20mohali&t=&z=14&ie=UTF8&iwloc=B&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -115,12 +120,12 @@ const ContactPage = () => {
         </div>
       </motion.div>
       
-      {/* === "CONNECT WITH US" SECTION MOVED HERE === */}
+      {/* "Connect With Us" Section */}
       <motion.div
         className="text-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.8 }} // Adjusted delay
+        transition={{ duration: 0.5, delay: 1.0 }}
       >
         <h2 className="text-3xl font-bold font-serif">Connect With Us</h2>
         <div className="mt-6 flex justify-center space-x-6">
@@ -130,9 +135,7 @@ const ContactPage = () => {
           <a href="https://www.facebook.com/profile.php?id=61578960091959" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-transform hover:-translate-y-1">
             <Facebook className="w-8 h-8" />
           </a>
-          <a href="https://wa.me/919416201637" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-transform hover:-translate-y-1">
-            <MessageSquare className="w-8 h-8" />
-          </a>
+          {/* REMOVED WhatsApp from here to avoid duplication */}
         </div>
         <div className="mt-8 flex justify-center items-start">
             <MapPin className="w-5 h-5 mr-3 mt-1 text-primary flex-shrink-0" />

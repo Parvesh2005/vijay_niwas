@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/shared/Navbar';
 import Footer from './components/shared/Footer';
+import ContactPage from './pages/ContactPage';
 
 const HomePage = () => <h1 className="text-4xl">Page Content Goes Here</h1>;
 
@@ -21,7 +22,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/rooms" element={<HomePage />} />
           <Route path="/about" element={<HomePage />} />
-          <Route path="/contact" element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/book" element={<HomePage />} />
         </Routes>
       </main>

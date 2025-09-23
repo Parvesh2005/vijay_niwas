@@ -23,7 +23,7 @@ const Footer = () => {
               <span className="ml-3 font-serif text-2xl font-bold">Vijay Niwas</span>
             </Link>
             <p className="mt-4 text-sm text-foreground/60 max-w-xs">
-              Experience tranquility and unmatched hospitality amidst the serene hills.
+              Experience tranquility and unmatched hospitality amidst the serene greenery.
             </p>
           </div>
           <div>

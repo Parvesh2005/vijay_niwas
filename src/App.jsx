@@ -6,6 +6,7 @@ import LoadingSpinner from './components/shared/LoadingSpinner';
 import ScrollToTop from './components/shared/ScrollToTop';
 
 import HomePage from './pages/HomePage';
+const BookPage = React.lazy(() => import('./pages/BookPage'));
 const AboutPage = React.lazy(() => import('./pages/AboutPage'));
 const ContactPage = React.lazy(() => import('./pages/ContactPage'));
 
@@ -22,7 +23,7 @@ function App() {
             <Route path="/rooms" element={<div>Rooms Page</div>} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/book" element={<div>Book Now Page</div>} />
+            <Route path="/book" element={<BookPage />} />
           </Routes>
         </Suspense>
       </main>

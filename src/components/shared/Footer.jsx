@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="flex flex-col items-start">
             <Link to="/" className="flex items-center">
-              <img src="/logo.png" alt="Vijay Niwas Logo" className="h-10 w-auto" />
+              <img src="/logo.webp" alt="Vijay Niwas Logo" className="h-10 w-auto" />
               <span className="ml-3 font-serif text-2xl font-bold">Vijay Niwas</span>
             </Link>
             <p className="mt-4 text-sm text-foreground/60 max-w-xs">

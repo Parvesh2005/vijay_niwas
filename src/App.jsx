@@ -8,8 +8,6 @@ const HomePage = () => <h1 className="text-4xl">Page Content Goes Here</h1>;
 
 function App() {
   return (
-    // This div should NOT have the "container" class.
-    // It controls the overall page layout, like the sticky footer.
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       

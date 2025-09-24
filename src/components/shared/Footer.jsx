@@ -11,12 +11,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    // This footer is now full-width and has the background color
     <footer className="bg-background/80 border-t mt-12">
-      {/* This container div now constrains the content inside the full-width footer */}
       <div className="container mx-auto px-6 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* ... All grid content remains the same ... */}
           <div className="flex flex-col items-start">
             <Link to="/" className="flex items-center">
               <img src="/logo.png" alt="Vijay Niwas Logo" className="h-10 w-auto" />

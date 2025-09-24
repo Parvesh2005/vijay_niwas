@@ -17,7 +17,6 @@ const fadeIn = (delay = 0) => ({
 
 
 const AboutPage = () => {
-  // === UPDATED ROOM DESCRIPTIONS ARE HERE ===
   const rooms = [
     {
       name: 'Emerald',
@@ -36,7 +35,6 @@ const AboutPage = () => {
       features: 'Perfect for the discerning traveler, the Deluxe Room offers a cozy sanctuary, thoughtfully designed to be your personal retreat for a wonderfully restful stay.'
     },
   ];
-  // ===========================================
 
   const locationFeatures = [
     { icon: <Plane className="w-8 h-8 text-primary" />, text: "Near the Airport" },
@@ -53,7 +51,7 @@ const AboutPage = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="absolute inset-0 bg-black/50 z-10"></div>
-        <img src="/dining_hall.jpg" alt="Welcoming view of Vijay Niwas" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/dining_hall.webp" alt="Welcoming view of Vijay Niwas" className="absolute inset-0 w-full h-full object-cover" />
         <motion.div className="z-20 p-4" variants={fadeIn(0.3)} initial="hidden" animate="visible">
           <h1 className="text-4xl md:text-6xl font-bold font-serif">Welcome to Vijay Niwas</h1>
           <p className="mt-4 text-xl max-w-2xl">Your home on the road, where modern comforts blend with genuine hospitality.</p>
@@ -74,7 +72,7 @@ const AboutPage = () => {
           </div>
         </motion.div>
         <motion.div variants={slideIn('right')} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <img src="outside.jpg" alt="Interior of Vijay Niwas" className="rounded-lg shadow-lg w-full h-auto object-cover" />
+          <img src="outside.webp" alt="Interior of Vijay Niwas" className="rounded-lg shadow-lg w-full h-auto object-cover" />
         </motion.div>
       </section>
 

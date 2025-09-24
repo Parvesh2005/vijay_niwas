@@ -1,10 +1,7 @@
-// src/pages/ContactPage.jsx
-
 import { motion } from 'framer-motion';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Mail, Phone, MapPin, Instagram, Facebook, MessageSquare, Clock } from 'lucide-react';
 
-// Animation variants for the container to orchestrate staggering
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -15,7 +12,6 @@ const containerVariants = {
   },
 };
 
-// Animation variants for individual items
 const itemVariants = {
   hidden: { y: 20, opacity: 0 },
   visible: {
@@ -26,7 +22,6 @@ const itemVariants = {
 };
 
 const ContactPage = () => {
-  // CHANGED: Replaced 'Reception Hours' with 'WhatsApp'
   const primaryContacts = [
     {
       icon: <Mail className="w-10 h-10 mb-4 text-primary" />,
@@ -135,7 +130,6 @@ const ContactPage = () => {
           <a href="https://www.facebook.com/profile.php?id=61578960091959" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-transform hover:-translate-y-1">
             <Facebook className="w-8 h-8" />
           </a>
-          {/* REMOVED WhatsApp from here to avoid duplication */}
         </div>
         <div className="mt-8 flex justify-center items-start">
             <MapPin className="w-5 h-5 mr-3 mt-1 text-primary flex-shrink-0" />

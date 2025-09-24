@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex w-full items-center">
           <Link to="/" className="flex items-center">
-            <img src="/logo.png" alt="Vijay Niwas Logo" className="h-10 w-auto" />
+            <img src="/logo.webp" alt="Vijay Niwas Logo" className="h-10 w-auto" />
             <span className="ml-3 font-serif text-2xl font-bold">Vijay Niwas</span>
           </Link>
           <nav className="mx-auto flex items-center space-x-6">
@@ -47,12 +47,10 @@ const Navbar = () => {
               </Button>
             </SheetTrigger>
             
-            {/* === SIDEBAR CONTENT CHANGES ARE HERE === */}
             <SheetContent side="left" className="flex flex-col">
               <div className="grid gap-4 py-4">
-                {/* Replaced text with the full logo component */}
                 <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center pb-4 border-b">
-                  <img src="/logo.png" alt="Vijay Niwas Logo" className="h-9 w-auto" />
+                  <img src="/logo.webp" alt="Vijay Niwas Logo" className="h-9 w-auto" />
                   <span className="ml-3 font-serif text-2xl font-bold">Vijay Niwas</span>
                 </Link>
                 
@@ -73,11 +71,10 @@ const Navbar = () => {
                 </Link>
               </div>
             </SheetContent>
-            {/* ======================================= */}
           </Sheet>
           
           <Link to="/" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center">
-            <img src="/logo.png" alt="Vijay Niwas Logo" className="h-9 w-auto" />
+            <img src="/logo.webp" alt="Vijay Niwas Logo" className="h-9 w-auto" />
             <span className="ml-2 font-serif text-xl font-bold">Vijay Niwas</span>
           </Link>
         </div>

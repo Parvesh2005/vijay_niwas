@@ -51,7 +51,7 @@ const AboutPage = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="absolute inset-0 bg-black/50 z-10"></div>
-        <img src="/dining_hall.webp" alt="Welcoming view of Vijay Niwas" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+        <img src="/about_us.webp" alt="Welcoming view of Vijay Niwas" className="absolute inset-0 w-full h-full object-cover object-bottom" loading="lazy" />
         <motion.div className="z-20 p-4" variants={fadeIn(0.3)} initial="hidden" animate="visible">
           <h1 className="text-4xl md:text-6xl font-bold font-serif">Welcome to Vijay Niwas</h1>
           <p className="mt-4 text-xl max-w-2xl">Your home on the road, where modern comforts blend with genuine hospitality.</p>

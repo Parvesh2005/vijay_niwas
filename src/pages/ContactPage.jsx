@@ -125,10 +125,16 @@ const ContactPage = () => {
         <h2 className="text-3xl font-bold font-serif">Connect With Us</h2>
         <div className="mt-6 flex justify-center space-x-6">
           <a href="https://www.instagram.com/vijayniwas8?igsh=MW5wenQzc3FhenU5aQ==" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-transform hover:-translate-y-1">
-            <Instagram className="w-8 h-8" />
+            <div className="flex flex-col items-center transition-transform group-hover:-translate-y-1">
+              <Instagram className="w-8 h-8" />
+              <span className="mt-2 text-sm font-medium">Instagram</span>
+            </div>
           </a>
           <a href="https://www.facebook.com/profile.php?id=61578960091959" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-transform hover:-translate-y-1">
-            <Facebook className="w-8 h-8" />
+            <div className="flex flex-col items-center transition-transform group-hover:-translate-y-1">
+              <Facebook className="w-8 h-8" />
+              <span className="mt-2 text-sm font-medium">Facebook</span>
+            </div>
           </a>
         </div>
         <div className="mt-8 flex justify-center items-start">

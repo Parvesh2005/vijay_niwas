@@ -89,19 +89,19 @@ const HomePage = () => {
               <a href="https://www.instagram.com/vijayniwas8?igsh=MW5wenQzc3FhenU5aQ==" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary group">
                 <div className="flex flex-col items-center transition-transform group-hover:-translate-y-1">
                   <Instagram className="w-8 h-8" />
-                  <span className="mt-2 text-sm font-medium">Instagram</span>
+                  <span className="mt-2 text-sm font-medium underline">vijayniwas8</span>
                 </div>
               </a>
               <a href="https://www.facebook.com/profile.php?id=61578960091959" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary group">
                 <div className="flex flex-col items-center transition-transform group-hover:-translate-y-1">
                   <Facebook className="w-8 h-8" />
-                  <span className="mt-2 text-sm font-medium">Facebook</span>
+                  <span className="mt-2 text-sm font-medium underline">Vijay Niwas</span>
                 </div>
               </a>
               <a href="https://wa.me/919416201637" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary group">
                 <div className="flex flex-col items-center transition-transform group-hover:-translate-y-1">
                   <MessageSquare className="w-8 h-8" />
-                  <span className="mt-2 text-sm font-medium">WhatsApp</span>
+                  <span className="mt-2 text-sm font-medium underline">WhatsApp</span>
                 </div>
               </a>
             </div>

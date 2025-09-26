@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Mail, Phone, MapPin, Instagram, Facebook, MessageSquare, Clock } from 'lucide-react';
 
+// <div class="embed-map-responsive"><div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&height=400&hl=en&q=30%C2%B043%2744.1%22N%2076%C2%B041%2712.8%22E&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a href="https://sprunkiretake.net" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki retake</a></div><style>.embed-map-responsive{position:relative;text-align:right;width:100%;height:0;padding-bottom:66.66666666666666%;}.embed-map-container{overflow:hidden;background:none!important;width:100%;height:100%;position:absolute;top:0;left:0;}.embed-map-frame{width:100%!important;height:100%!important;position:absolute;top:0;left:0;}</style></div>
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -104,7 +106,7 @@ const ContactPage = () => {
       >
         <div className="aspect-video w-full overflow-hidden rounded-lg border shadow-sm">
           <iframe
-            src="https://maps.google.com/maps?width=600&height=400&hl=en&q=puda%20city%2C%20sector%20119%2C%20mohali&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+            src="https://maps.google.com/maps?width=600&height=400&hl=en&q=30%C2%B043%2744.1%22N%2076%C2%B041%2712.8%22E&t=&z=14&ie=UTF8&iwloc=B&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -127,13 +129,13 @@ const ContactPage = () => {
           <a href="https://www.instagram.com/vijayniwas8?igsh=MW5wenQzc3FhenU5aQ==" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-transform hover:-translate-y-1">
             <div className="flex flex-col items-center transition-transform group-hover:-translate-y-1">
               <Instagram className="w-8 h-8" />
-              <span className="mt-2 text-sm font-medium">Instagram</span>
+              <span className="mt-2 text-sm font-medium underline">vijayniwas8</span>
             </div>
           </a>
           <a href="https://www.facebook.com/profile.php?id=61578960091959" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-transform hover:-translate-y-1">
             <div className="flex flex-col items-center transition-transform group-hover:-translate-y-1">
               <Facebook className="w-8 h-8" />
-              <span className="mt-2 text-sm font-medium">Facebook</span>
+              <span className="mt-2 text-sm font-medium underline">Vijay Niwas</span>
             </div>
           </a>
         </div>

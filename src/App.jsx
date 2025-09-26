@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 const BookPage = React.lazy(() => import('./pages/BookPage'));
 const AboutPage = React.lazy(() => import('./pages/AboutPage'));
 const ContactPage = React.lazy(() => import('./pages/ContactPage'));
+const RoomsPage = React.lazy(() => import('./pages/RoomsPage'));
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/rooms" element={<div>Rooms Page</div>} />
+            <Route path="/rooms" element={<RoomsPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/book" element={<BookPage />} />

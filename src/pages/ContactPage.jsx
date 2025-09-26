@@ -91,7 +91,7 @@ const ContactPage = () => {
       >
         <Clock className="w-5 h-5 mr-3 text-primary" />
         <p className="text-foreground/80">
-          <span className="font-semibold">Reception Hours:</span> EveryDay: 6AM - 10PM
+          <span className="font-semibold">Reception Hours:</span> 6AM - 10PM
         </p>
       </motion.div>
       
